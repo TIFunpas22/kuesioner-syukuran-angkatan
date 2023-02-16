@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Default CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>kuesioner-sa-tif22</title>
+  </head>
+  <body class="ms-5 me-5">
+    <!-- Header -->
+    <br />
+    <header>
+      <h2 class="text-center mb-4">
+        KUESIONER SYUKURAN ANGKATAN <br />
+        TEKNIK INFORMATIKA <br />
+        UNIVERITAS PASUNDAN <br />
+        ANGKATAN 2022
+      </h2>
+    </header>
+    <!-- Hero -->
+    <div class="hero">
+      <img src="img/logo-if-22.jpg" class="img-fluid mb-5" alt="..." />
+    </div>
+    <!-- Alert -->
+    <div class="alert alert-success d-none" role="alert">
+      <p class="text-center">
+        <strong>Thanks !</strong> We have received your message
+      </p>
+    </div>
+    <form>
+      <!-- Nama -->
+      <div class="mb-5">
+        <label for="exampleInputEmail1" class="form-label mt-5"
+          ><strong>Nama</strong></label
+        >
+        <input
+          name="nama"
+          type="text"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          required
+          placeholder="Ketikan nama anda disini"
+        />
+        <div id="emailHelp" class="form-text">* Wajib diisi dengan benar</div>
+      </div>
+      <!-- Npm -->
+      <div class="mb-5">
+        <label for="exampleInputEmail1" class="form-label">
+          <strong>NRP</strong>
+        </label>
+        <input
+          name="npm"
+          type="text"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          required
+          placeholder="Ketikan NRP anda disini"
+        />
+        <div id="emailHelp" class="form-text">* Wajib diisi dengan benar</div>
+      </div>
+      <hr />
+      <!-- Bersedia hadir SA -->
+      <div class="hadir-sa mb-5">
+        <p class="mt-5">
+          Apakah anda bersedia hadir dalam acara
+          <strong>Syukuran Angkatan 2022</strong>
+        </p>
+        <div class="form-check form-check-inline">
+          <input
+            name="kehadiranSA"
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="inlineRadio1"
+            value="option1"
+          />
+          <label class="form-check-label" for="inlineRadio1">Bersedia</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            name="kehadiranSA"
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="inlineRadio2"
+            value="option2"
+          />
+          <label class="form-check-label" for="inlineRadio2"
+            >Tidak bersedia</label
+          >
+        </div>
+      </div>
+      <hr />
+      <!-- Bersedia tampil pensi -->
+      <div class="tampil-pensi mb-5">
+        <p class="mt-5">
+          Apakah anda ingin menampilkan pensi pada acara
+          <strong>Syukuran Angkatan 2022</strong>
+        </p>
+        <div class="form-check">
+          <input
+            name="tampilpensi"
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="flexRadioDefault1"
+          />
+          <label class="form-check-label" for="flexRadioDefault1">
+            Bersedia
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            name="tampilpensi"
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="flexRadioDefault2"
+            checked
+          />
+          <label class="form-check-label" for="flexRadioDefault2">
+            Tidak bersedia
+          </label>
+        </div>
+      </div>
+      <hr />
+      <!-- Opsi pensi -->
+      <label for="exampleInputEmail1" class="form-label mt-4"
+        >Di pentas seni mau tampil sebagai apa ?</label
+      >
+      <select
+        name="opsipensi"
+        class="form-select mb-5"
+        aria-label="Default select example"
+      >
+        <option>Tidak ada</option>
+        <option>Solo musik</option>
+        <option>Band</option>
+        <option>Dance</option>
+        <option>Drama</option>
+        <option>Stand up comedy</option>
+        <option>Puisi</option>
+      </select>
+    </form>
+    <!-- Button -->
+    <button type="button submit" class="btn btn-dark mb-5">Kirim</button>
+    <button class="btn btn-dark mb-5 d-none" type="button" disabled>
+      <span
+        class="spinner-grow spinner-grow-sm"
+        role="status"
+        aria-hidden="true"
+      ></span>
+      Loading...
+    </button>
+    <!-- Boostrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
